@@ -3,20 +3,28 @@ body {
   background-color: silver;
   font-family: 'Inconsolata', monospace;
   text-align: center;
-  border: 3px solid blue;
+  border: 5px solid blue;
   margin: 0;
 }
 
 #main {
-  margin: auto;
+  margin: 0 auto;
   border: 3px solid red;
-  width: 90%;
+  width: 80%;
+  padding: 5%;
 }
 
 .container {
   border: 3px solid green;
   margin: 0 auto;
   width: 50%;
+}
+
+.info {
+  border: 3px solid white;
+  margin: 0 auto;
+  width: 80%;
+  padding: 2%;
 }
 
 #header {
@@ -65,7 +73,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  padding-top: 35%;
+  padding-top: 20%;
 }
 
 pre {
@@ -77,6 +85,8 @@ pre {
   padding: 2%;
   border: 1px solid black;
   white-space: pre-wrap;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 li {
@@ -97,4 +107,54 @@ li {
 .green {
   color: green;
   font-weight: bolder;
+}
+
+#in {
+  height: 3%;
+  width: 3%;
+  border: 1px solid gray;
+}
+
+#di {
+  height: 30%;
+  width: 30%;
+  border: 1px solid gray;
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+
+th {
+  font-weight: 900;
+}
+
+table {
+  margin: 0 auto;
+}
+
+#w, #x, #y, #z {
+  height: 130px;
+  width: 130px;
+  display: inline-block;
+}
+
+#w {
+  border: 4px dotted pink;
+  background-color: rgba(255, 255, 255, 0.69);
+}
+
+#x {
+  border: 4px dashed lime;
+  background-color: rgba(255, 255, 255, 0.69);
+}
+
+#y {
+  border: 4px groove orange;
+  background-color: rgba(255, 255, 255, 0.69);
+}
+
+#z {
+  border: 4px double skyblue;
+  background-color: rgba(255, 255, 255, 0.69);
 }

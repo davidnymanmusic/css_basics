@@ -15,11 +15,12 @@
   <div id="main">
     <div class="container">
       <h1>Cascading Style Sheets</h1>
-        <div class="container">
-          <h2>BACK TO BASICS:</h2>
-          <!-- <a href="#id">The object you want to link to.</a> -->
+      <div class="container">
+        <h2>Back to Basics</h2>
+        <h2>CHEAT SHEET</h2>
+        <!-- <a href="#id">The object you want to link to.</a> -->
 
-        </div>
+      </div>
     </div>
     <div class="sidebar-sticky">
       <p>This</p>
@@ -32,57 +33,103 @@
       <p>Is a</p>
       <p>Sidebar</p>
     </div>
-    <h3>What is a &lt;div&gt;?</h3>
 
-    <p>A div tag has no specific meaning, it is simply a way to group tags. In order to give a div some style, you'll need to add properties such as: </p>
-    <ul>
-      <li>height</li>
-      <li>width</li>
-      <li>margin</li>
-      <li>padding</li>
-      <li>border</li>
-    </ul>
-    <p>The <span class='green'>green</span> border you see is a div with the class name "container" and it's used for the &lt;h1&gt;. There is also a the same class of div with the &lt;h2&gt;. The style is:
+    <div class="info">
+      <h3>Chrome Inspector is your best friend for understanding CSS</h3>
+      <p>If you're unsure of what's happening behind the scenes, <strong>use ⌘ + Shift + C</strong> to take a look under the hood</p>
+      <p><img id="in" src="https://i.imgur.com/FCNnDYz.png" title="use this to hover over elements" /></p>
 
-      <pre>
+      <p>There are lots of different div styles on this page. There are descriptions of a few, but if you want to learn more, hover over the section to see the styling.</p>
+      <h3>What is a &lt;div&gt;?</h3>
+
+      <p>A div tag has no specific meaning, it is simply a way to group tags. In order to give a div some style, you'll need to add properties such as: </p>
+      <ul>
+        <li>height</li>
+        <li>width</li>
+        <li>margin</li>
+        <li>padding</li>
+        <li>border</li>
+        <li>background-color</li>
+      </ul>
+      <p>Use different border styles and colors when designing your page to keep track of all the different divs. You can always delete the border later.</p>
+      <div id="w" title="dotted"></div>
+      <div id="x" title="dashed"></div>
+      <div id="y" title="groove"></div>
+      <div id="z" title="double"></div>
+      <p>The <span class='green'>green</span> border you see is a div with the class name "container" and it's used for the &lt;h1&gt;. There is also a the same class of div with the &lt;h2&gt;. The style is:
+
+        <pre>
         .container {
           border: 3px solid green;
           margin: 0 auto;
           width: 50%;
-        }</pre>
-      Notice how the width is %50, so it will only take up 50% of the width of whatever it contained in.
-    </p>
-    <p> The <span class="red">red</span> border you see is a div with an id (#main) and it is styled with:
-      <pre>
+        }</pre> Notice how the width is 50%, so it will only take up 50% of the width of whatever it contained in.
+      </p>
+      <p> The <span class="red">red</span> border you see is a div with an id (#main) and it is styled with:
+        <pre>
         #main {
           margin: auto;
           border: 3px solid red;
           width: 90%;
+          padding: 5%;
         }
 </pre> </p>
-    <p>The <span class="blue">blue</span> border you see is shows the body tag. The styling for the body is:
-      <pre>
+      <p>The <span class="blue">blue</span> border you see is shows the body tag. The styling for the body is:
+        <pre>
         body {
           background-color: silver;
           font-family: 'Inconsolata', monospace;
           text-align: center;
-          border: 3px solid blue;
+          border: 5px solid blue;
           margin: 0;
         }
 </pre>
 
-    </p>
-<h2>Margin vs. Padding</h2>
-<ul>
-  <li>Margin is to separate blocks from things outside</li>
-  <li>Padding is to separate blocks from things inside</li>
-</ul>
+      </p>
+      <h2>Margin vs. Padding</h2>
+      <ul>
+        <li>Margin is to separate blocks from things outside</li>
+        <li>Padding is to separate blocks from things inside</li>
+      </ul>
 
-<p>The <span class="blue">blue</span> border has no margin, so that's why it's going to the very edge of the page.</p>
+      <p>The <span class="blue">blue</span> border has no margin, so that's why it's going to the very edge of the page.</p>
+      <p>The <span class='red'>red</span> border has padding so there is some space between the text and the border.</p>
+
+      <p>Use this diagram in the Inspector to understand how margin, padding, and border are working together in an element</p>
+      <img id="di" src="https://i.imgur.com/8TUMM3s.png" title="source: imgur.com" />
+      <h2>Units of Measurement</h2>
+      <table>
+        <tr>
+          <th>Unit</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>px (absolute)</td>
+          <td>pixels (1px = 1/96th of 1in)</td>
+
+        </tr>
+        <tr>
+          <td>em (relative)</td>
+          <td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>
+        </tr>
+        <tr>
+          <td>rem (relative)</td>
+          <td>Relative to font-size of the root element</td>
+        </tr>
+        <tr>
+          <td>vh (relative)</td>
+          <td>Relative to 1% of the height of the viewport</td>
+        </tr>
+        <tr>
+          <td>vw (relative)</td>
+          <td>Relative to 1% of the width of the viewport</td>
+        </tr>
+      </table>
+    </div>
   </div>
-<div id=footer>this is a sticky footer</div>
+  <div id=footer>this is a sticky footer</div>
 
-<p id="id"></p>
+  <!-- <p id="id"></p> -->
 </body>
 
 </html>
