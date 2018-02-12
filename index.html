@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>css</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div id=header>this is a sticky header</div>
+
+  <div id="main">
+    <div class="container">
+      <h1>Cascading Style Sheets</h1>
+        <div class="container">
+          <h2>BACK TO BASICS:</h2>
+          <!-- <a href="#id">The object you want to link to.</a> -->
+
+        </div>
+    </div>
+    <div class="sidebar-sticky">
+      <p>This</p>
+      <p>Is a</p>
+      <p>Sticky Sidebar</p>
+    </div>
+
+    <div class="sidebar">
+      <p>This</p>
+      <p>Is a</p>
+      <p>Sidebar</p>
+    </div>
+    <h3>What is a &lt;div&gt;?</h3>
+
+    <p>A div tag has no specific meaning, it is simply a way to group tags. In order to give a div some style, you'll need to add properties such as: </p>
+    <ul>
+      <li>height</li>
+      <li>width</li>
+      <li>margin</li>
+      <li>padding</li>
+      <li>border</li>
+    </ul>
+    <p>The <span class='green'>green</span> border you see is a div with the class name "container" and it's used for the &lt;h1&gt;. There is also a the same class of div with the &lt;h2&gt;. The style is:
+
+      <pre>
+        .container {
+          border: 3px solid green;
+          margin: 0 auto;
+          width: 50%;
+        }</pre>
+      Notice how the width is %50, so it will only take up 50% of the width of whatever it contained in.
+    </p>
+    <p> The <span class="red">red</span> border you see is a div with an id (#main) and it is styled with:
+      <pre>
+        #main {
+          margin: auto;
+          border: 3px solid red;
+          width: 90%;
+        }
+</pre> </p>
+    <p>The <span class="blue">blue</span> border you see is shows the body tag. The styling for the body is:
+      <pre>
+        body {
+          background-color: silver;
+          font-family: 'Inconsolata', monospace;
+          text-align: center;
+          border: 3px solid blue;
+          margin: 0;
+        }
+</pre>
+
+    </p>
+<h2>Margin vs. Padding</h2>
+<ul>
+  <li>Margin is to separate blocks from things outside</li>
+  <li>Padding is to separate blocks from things inside</li>
+</ul>
+
+<p>The <span class="blue">blue</span> border has no margin, so that's why it's going to the very edge of the page.</p>
+  </div>
+<div id=footer>this is a sticky footer</div>
+
+<p id="id"></p>
+</body>
+
+</html>
