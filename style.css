@@ -5,6 +5,7 @@ body {
   text-align: center;
   border: 5px solid blue;
   margin: 0;
+  font-size: 110%;
 }
 
 #main {
